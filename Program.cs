@@ -20,5 +20,26 @@ int b = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine($"Number {a} to the extent {b} is {Exponentiation(a, b)}");
  */
 // Задача 27: Напишите программу, которая принимает на вход число и выдаёт сумму цифр в числе.
+/* 
+int SumOfDigits (int num)
+{
+    int sum = 0;
+    int count = 0;
 
+    if (num < 0) num = -num;
+    while (num > 0)
+    {
+        count ++;
+        sum = sum + num%10;
+        num = num/10;
+       
+    }
+    return sum;
+}
+
+Console.Write("Input integer number: ");
+int number = Convert.ToInt32(Console.ReadLine());
+
+Console.WriteLine($"Sum of digits in {number} is {SumOfDigits(number)}");
+ */
 //Задача 29: Напишите программу, которая создает массив заданного пользователем размера, заполняет массив элементами от 1 до 99 и выводит их на экран.

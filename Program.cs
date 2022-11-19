@@ -43,3 +43,33 @@ int number = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine($"Sum of digits in {number} is {SumOfDigits(number)}");
  */
 //Задача 29: Напишите программу, которая создает массив заданного пользователем размера, заполняет массив элементами от 1 до 99 и выводит их на экран.
+/* 
+int [] CreatRandArray (int n, int minVal, int maxVal)
+{
+    int [] arr = new int [n];
+    for (int i = 0; i < n; i++)
+    {
+        arr[i] = new Random().Next(minVal,maxVal);
+    }
+    return arr;
+}
+
+void PrintArray (int [] arr)
+{
+    Console.Write("Array: [");
+    for (int i = 0; i < arr.Length; i++)
+    {
+        Console.Write($"{arr[i]}, ");
+    }
+    Console.Write("\b\b]");
+}
+
+Console.Write("Input the positive integer number of array elements: ");
+int number = Convert.ToInt32(Console.ReadLine());
+
+if (number > 1)
+    PrintArray (CreatRandArray (number,1,99));
+else
+    Console.WriteLine($"Your number: {number}, does not match the condition of the problem, try again");
+ */
+ 
